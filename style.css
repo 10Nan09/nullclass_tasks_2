@@ -1,0 +1,86 @@
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Body */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3d59, #3e8fc5, #f5f7fa);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 15px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+h1 { font-size: 2rem; font-weight: 700; }
+.subtitle { font-size: 1rem; font-weight: 400; margin-top: 5px; }
+
+/* Main Container */
+.dashboard-container {
+    max-width: 980px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+/* Tableau Embed Box */
+.tableauPlaceholder {
+    display: none; /* initially hidden; JS will show */
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border: 1px solid #e0e0e0;
+}
+
+/* Time message */
+.time-message {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+/* CSV Download */
+.download-section {
+    text-align: center;
+    margin-top: 20px;
+}
+.download-section a {
+    text-decoration: none;
+    background-color: #1e3d59;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.download-section a:hover {
+    background-color: #16314a;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e3d59;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
